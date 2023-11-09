@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+button {
+  color: white;
+  font-size: 1rem;
+  background: none;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid blueviolet;
+  background-color: blueviolet;
+  padding: 0.5rem 1rem;
+}
+input {
+  display: block;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+input:hover,
+input:focus {
+  outline: none;
+}
+li {
+  margin: 0;
+  cursor: pointer;
+}
+main {
+  margin-top: 10rem;
+}
+ul {
+  list-style: none;
+}
+nav {
+  position: fixed;
+  top: 0;
+  box-shadow: 2px 2px 20px 1px rgb(175, 175, 175, 0.5);
+  width: 100%;
+  padding: 0 1rem;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: blueviolet;
+  flex: 3;
+  flex-wrap: nowrap;
+}
+
+nav li:hover,
+nav li:focus {
+  color: black;
+}
+
+nav li:nth-child(2)::after,
+nav li:nth-child(5)::after {
+  content: "⌵";
+}
+
+nav h1 {
+  float: left;
+  font-family: "Lobster", sans-serif;
+  flex: 1;
+  cursor: pointer;
+}
+/* utility styles */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.animate {
+  color: rgb(138, 43, 226);
+  box-shadow: 0 12px 0 0 rgb(138, 43, 226, 0.3);
+  background: none;
+  font-style: italic;
+}
+
+/* home page */
+
+.home {
+  display: flex;
+  padding: 0 1rem;
+}
+.home .text {
+  flex: 1;
+  padding: 0 2rem;
+}
+.home .text h1 {
+  font-family: 'Domine', serif;
+  font-size: 3.3rem;
+}
+.home .text ul {
+  list-style: inherit;
+  line-height: 2;
+  padding: 2rem;
+  font-size: 18px;
+}
+.home .image img {
+  width: 50vw;
+  border-radius: 20px;
 }
