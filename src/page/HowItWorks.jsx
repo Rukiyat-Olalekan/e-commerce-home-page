@@ -1,0 +1,42 @@
+import React from "react";
+import tomatojpg from "../assets/tomato.jpg"
+
+const HowItWorks = () => {
+  return (
+    <section className="home flex">
+      <div>
+        <h1 className="header">How it works</h1>
+        <div className="text border">
+          <div>
+            <h2>Choose your plan</h2>
+            <p>
+              Sign up on the Flavor Fiesta app. Choose a meal schedule that
+              works for you; when you want it. It takes less than 5 minutes.
+            </p>
+          </div>
+          <div>
+            <h2>We Cook and Deliver</h2>
+            <p>
+              We cook up your picks from our rich menu and deliver them to you
+              on schedule. At no extra delivery costs.
+            </p>
+          </div>
+          <div>
+            <h2>You heat and eat</h2>
+            <p>
+              It's ready to eat in 5 minutes. Or you can refrigerate for later!
+            </p>
+          </div>
+          <div>
+            <button>Order Now!</button>
+          </div>
+        </div>
+      </div>
+      <div className="image">
+        <img src={tomatojpg} alt="" />
+      </div>
+    </section>
+  );
+};
+
+export default HowItWorks;

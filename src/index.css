@@ -29,6 +29,10 @@ button {
   margin: 1rem 0;
   width: 10rem;
 }
+h2 {
+  font-size: 1.5rem;
+  font-family: "Domine", serif;
+}
 input {
   display: block;
   font-size: 1.2rem;
@@ -45,8 +49,12 @@ li {
   margin: 0;
 }
 main {
-  margin-top: 10rem;
+  padding: 6rem 3rem;
 }
+section {
+  margin-bottom: 3rem;
+}
+
 ul {
   list-style: none;
    padding: 0;
@@ -61,6 +69,7 @@ nav {
   box-shadow: 2px 2px 20px 1px white;
   width: 100%;
   padding: 0 1rem;
+  background-color: white;
 }
 nav .lists {
   display: flex;
@@ -104,7 +113,7 @@ nav .lists li:nth-child(5):hover .contact {
   width: 40vw;
   height: 30vh;
   background-color: white;
-  box-shadow: 5px 5px 20px 2px rgba(175, 175, 175, 0.5);
+  box-shadow: 5px 5px 20px 0 rgb(190, 179, 187);
   line-height: 3;
   padding: 2rem 2rem;
   color: blueviolet;
@@ -114,10 +123,6 @@ nav .lists li:nth-child(5):hover .contact {
 
 /* home page */
 
-.home {
-  display: flex;
-  padding: 0 3rem;
-}
 .home .text {
   flex: 1;
   padding: 0 2rem;
@@ -135,8 +140,9 @@ nav .lists li:nth-child(5):hover .contact {
 .home .image {
   display: block;
 }
-.home .image img {
+.home .image img, .how-image img {
   width: 40vw;
+  height: 400px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0 0 0 / 30%);
 }
@@ -153,17 +159,31 @@ nav .lists li:nth-child(5):hover .contact {
   box-shadow: 0 12px 0 0 rgb(138, 43, 226, 0.3);
   background: none;
   font-style: italic;
-  font-size: 3.8rem;
 }
 .hidden {
   display: none;
 }
+.bg {
+background-color: rgb(255, 252, 255);
+}
+.header {
+  font-size: 2.8rem;
+  padding: 0 2rem;
+  font-family: "Domine", serif;
+}
+.border {
+  border-left: 1px solid blueviolet;
+}
+
 @media screen and (max-width: 700px) {
   main {
-    width: 95%;
+    padding: 0.5rem;
     margin: 6rem auto;
     text-align: center;
     font-size: 14px;
+  }
+  button {
+    width: 100%;
   }
   li {
     list-style: none;
@@ -177,12 +197,15 @@ nav .lists li:nth-child(5):hover .contact {
     float: right;
   }
   /* home page */
+  .home {
+    padding: 2rem 0;
+  }
   .home .text {
     display: block;
   }
   .home .text h1 {
     font-family: "Domine", serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .home .text li {
     font-size: 15px;

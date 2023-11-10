@@ -13,13 +13,12 @@ const Header = () => {
             <a href="/">Services</a>
             <div className="hidden services">
               <ul className="services-lists">
+              <li>Take out</li>
                 <li>Dine in</li>
-                <li>Take out</li>
                 <li>Hire a chef</li>
               </ul>
             </div>
           </li>
-
           <li>Companies</li>
           <li>Pricing</li>
           <li>
