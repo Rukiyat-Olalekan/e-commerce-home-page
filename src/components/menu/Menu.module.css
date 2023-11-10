@@ -1,14 +1,15 @@
 .menu {
   padding: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .menu h1 {
   text-align: center;
 }
 .menu ul {
   display: flex;
-  gap: 0;
+  gap: 0.5rem;
   font-size: 18px;
+  overflow: auto;
 }
 .menu ul:hover:after {
   content: "▶︎";

@@ -101,16 +101,11 @@ nav .lists li:nth-child(5)::after {
   content: " ⌵";
 }
 
-nav .lists li:nth-child(2):hover .services {
+.block {
   display: block;
   position: absolute;
   top: 6rem;
-}
-nav .lists li:nth-child(5):hover .contact {
-  display: block;
-  position: absolute;
-  top: 6rem;
-  right: 3rem;
+  right: 12rem;
   transition: display 10s ease-in-out;
 }
 .services,
@@ -125,7 +120,9 @@ nav .lists li:nth-child(5):hover .contact {
   font-size: 18px;
   border-radius: 10px;
 }
-
+.menu-bar, .mobile-lists {
+  display: none;
+}
 /* home page */
 
 .home .text {
@@ -182,21 +179,30 @@ nav .lists li:nth-child(5):hover .contact {
 }
 
 @media screen and (max-width: 900px) {
+  nav {
+    width: 100%;
+  }
   main {
-    padding: 0.5rem;
-    width: 90%;
-    margin: 6rem auto;
+    padding-right: 0rem;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
     font-size: 14px;
   }
   section {
     margin-bottom: 2rem;
   }
-  button {
+  .button {
+    text-align: center;
+  }
+  .button button {
     width: 100%;
   }
   li {
     list-style: none;
+  }
+  footer {
+    width: 100%;
   }
   /* nav */
   nav .lists {
@@ -204,9 +210,30 @@ nav .lists li:nth-child(5):hover .contact {
   }
   .menu-bar {
     display: block;
-    position: absolute;
-    right: 8px;
+    position: fixed;
+    right: 20px;
     top: 15px;
+  }
+  .mobile-lists {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    top: 60px;
+    line-height: 4;
+    box-shadow: 2px 2px 20px 1px white;
+    background-color: white;
+    transform: translateX();
+    transition: transform 10s ease-in;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: blueviolet;
+  }
+  .mobile-lists button {
+    width: fit-content;
+    margin: 3rem auto;
+
   }
   /* home page */
   .home {

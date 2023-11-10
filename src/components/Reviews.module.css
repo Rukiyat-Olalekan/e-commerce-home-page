@@ -17,6 +17,9 @@
   width: 100px;
   border-radius: 50%;
 }
+.name {
+  text-align: left;
+}
 .handle {
   color: blueviolet;
 }
@@ -29,4 +32,15 @@
   gap: 0.5rem;
   overflow: auto;
   margin-top: 4rem;
+}
+@media screen and (max-width: 900px) {
+  .card {
+    width: 50vw;
+  }
+  .review {
+    max-width: 100%;
+  }
+  .review-lists {
+    gap: 1.5rem;
+  }
 }

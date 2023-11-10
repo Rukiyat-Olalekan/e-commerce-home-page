@@ -27,7 +27,7 @@ const HowItWorks = () => {
               It's ready to eat in 5 minutes. Or you can refrigerate for later!
             </p>
           </li>
-          <div>
+          <div className="button">
             <button>Order Now!</button>
           </div>
         </ul>

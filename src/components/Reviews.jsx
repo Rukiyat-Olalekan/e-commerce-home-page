@@ -35,7 +35,7 @@ export const ReviewCard = ({ name, handle, review, photo }) => {
       <div className={styles["profile-photo"]}>
         <img src={photo} alt={name} />
         <div>
-          <p>{name}</p>
+          <p className={styles.name}>{name}</p>
           <p className={styles.handle}>{handle}</p>
         </div>
       </div>

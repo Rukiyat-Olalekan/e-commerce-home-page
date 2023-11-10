@@ -54,7 +54,9 @@ export function Welcome() {
             <FontAwesomeIcon icon={faCheck} />
           </li>
         </ul>
-        <button>Try a Tasty Meal!</button>
+        <li className="button">
+          <button>Try a Tasty Meal!</button>
+        </li>
       </div>
       <div className="image">
         <img src={tomatojpg} alt="tomato jpeg" />
