@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 button {
   color: white;
@@ -24,7 +25,9 @@ button {
   border: none;
   border: 1px solid blueviolet;
   background-color: blueviolet;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  width: 10rem;
 }
 input {
   display: block;
@@ -38,21 +41,28 @@ input:focus {
 li {
   margin: 0;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 main {
   margin-top: 10rem;
 }
 ul {
   list-style: none;
+   padding: 0;
+  margin: 0;
 }
+
+/* header */
+
 nav {
   position: fixed;
   top: 0;
-  box-shadow: 2px 2px 20px 1px rgb(175, 175, 175, 0.5);
+  box-shadow: 2px 2px 20px 1px white;
   width: 100%;
   padding: 0 1rem;
 }
-nav ul {
+nav .lists {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -61,22 +71,76 @@ nav ul {
   flex-wrap: nowrap;
 }
 
-nav li:hover,
-nav li:focus {
-  color: black;
-}
-
-nav li:nth-child(2)::after,
-nav li:nth-child(5)::after {
-  content: "⌵";
-}
-
 nav h1 {
   float: left;
   font-family: "Lobster", sans-serif;
   flex: 1;
   cursor: pointer;
 }
+
+nav .lists li:hover,
+nav .lists li:focus {
+  color: black;
+}
+
+nav .lists li:nth-child(2)::after,
+nav .lists li:nth-child(5)::after {
+  content: " ⌵";
+}
+
+nav .lists li:nth-child(2):hover .services {
+  display: block;
+  position: absolute;
+  top: 6rem;
+}
+nav .lists li:nth-child(5):hover .contact {
+  display: block;
+  position: absolute;
+  top: 6rem;
+  right: 3rem;
+  transition: display 10s ease-in-out;
+}
+.services, .contact {
+  width: 40vw;
+  height: 30vh;
+  background-color: white;
+  box-shadow: 5px 5px 20px 2px rgba(175, 175, 175, 0.5);
+  line-height: 3;
+  padding: 2rem 2rem;
+  color: blueviolet;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/* home page */
+
+.home {
+  display: flex;
+  padding: 0 3rem;
+}
+.home .text {
+  flex: 1;
+  padding: 0 2rem;
+}
+.home .text h1 {
+  font-family: "Domine", serif;
+  font-size: 3.3rem;
+}
+.home .text ul {
+  list-style: inherit;
+  line-height: 2;
+  font-size: 18px;
+  padding-left: 1rem;
+}
+.home .image {
+  display: block;
+}
+.home .image img {
+  width: 40vw;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+}
+
 /* utility styles */
 
 .flex {
@@ -89,29 +153,41 @@ nav h1 {
   box-shadow: 0 12px 0 0 rgb(138, 43, 226, 0.3);
   background: none;
   font-style: italic;
+  font-size: 3.8rem;
 }
-
-/* home page */
-
-.home {
-  display: flex;
-  padding: 0 1rem;
+.hidden {
+  display: none;
 }
-.home .text {
-  flex: 1;
-  padding: 0 2rem;
-}
-.home .text h1 {
-  font-family: 'Domine', serif;
-  font-size: 3.3rem;
-}
-.home .text ul {
-  list-style: inherit;
-  line-height: 2;
-  padding: 2rem;
-  font-size: 18px;
-}
-.home .image img {
-  width: 50vw;
-  border-radius: 20px;
+@media screen and (max-width: 700px) {
+  main {
+    width: 95%;
+    margin: 6rem auto;
+    text-align: center;
+    font-size: 14px;
+  }
+  li {
+    list-style: none;
+  }
+  /* nav */ 
+  nav .lists{
+    display: none;
+  }
+  .menu {
+    display: block;
+    float: right;
+  }
+  /* home page */
+  .home .text {
+    display: block;
+  }
+  .home .text h1 {
+    font-family: "Domine", serif;
+    font-size: 2rem;
+  }
+  .home .text li {
+    font-size: 15px;
+  }
+  .home .image {
+    display: none;
+  }
 }

@@ -29,12 +29,12 @@ const Home = () => {
     <section className="home">
       <div className="text">
         <h1>
-          Enjoy <span className="animate">{menuSlide}</span> <br />ready in 5 minutes
+          Enjoy <span className="animate">{menuSlide}</span><br /> ready in 5 minutes
         </h1>
         <ul>
           <li>Fresh chef-cooked meals delivered to you.</li>
           <li>No market runs. No prep-time. No extra delivery fees.</li>
-          <li>Just heat and eat</li>
+          <li>Just heat and eat.</li>
         </ul>
         <button>Try a Tasty Meal!</button>
       </div>
