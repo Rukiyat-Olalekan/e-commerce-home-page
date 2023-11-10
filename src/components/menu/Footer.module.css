@@ -1,0 +1,36 @@
+footer {
+  padding: 0 1rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: block;
+}
+.services {
+  display: flex;
+  gap: 2rem;
+  line-height: 2;
+  cursor: pointer;
+  font-weight: bold;
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+.reserved {
+  font-size: 10px;
+}
+@media screen and (max-width: 900px) {
+  .logo {
+    display: hidden;
+  }
+  .socials {
+    display: flex;
+    width: 30%;
+    margin: 1rem auto;
+    gap: 1rem;
+    text-align: center;
+  }
+}

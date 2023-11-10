@@ -1,0 +1,32 @@
+.card {
+  background-color: rgb(245, 244, 246);
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  flex: 1;
+  width: 12%;
+  border-radius: 10px;
+}
+
+.profile-photo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.profile-photo img {
+  width: 100px;
+  border-radius: 50%;
+}
+.handle {
+  color: blueviolet;
+}
+.review {
+  max-width: 20vw;
+  text-align: left;
+}
+.review-lists {
+  display: flex;
+  gap: 0.5rem;
+  overflow: auto;
+  margin-top: 4rem;
+}

@@ -1,5 +1,6 @@
 import Header from "./components/Header";
-import Home from "./page/Home";
+import Home from "./pages/Home";
+import Footer from "./components/menu/Footer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <main>
         <Home />
       </main>
+      <Footer />
     </div>
   );
 }

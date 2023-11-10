@@ -1,0 +1,14 @@
+.card img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.food-lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    background-color: rgb(255, 252, 255);
+}
+.button {
+    text-align: center;
+}
