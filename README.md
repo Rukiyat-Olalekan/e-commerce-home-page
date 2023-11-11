@@ -1,19 +1,31 @@
-# E-commerce home page
+# E-commerce Homepage
 
-# This project was built using:
+# Overview
 
- HTML
- CSS
- JavaScript
- React JS library
+- This E-commerce Homepage app serves as an imitation of an e-commerce homepage, specifically showcasing the services provided by a food business. The app comprises a header, main page, and footer.
 
-# The app is an e-commerce homepage imitation showcasing the services rendered by a food business; it consists of a header, main page and footer.
+# Technologies Used
 
-# Functionalities of the app:
+1. HTML
+2. CSS
+3. JavaScript
+4. React JS
 
-Navigation dropdown
-Responsive UI
-React reusable components
+# Features
 
+- Navigation Dropdown:
 
-<!-- Other functionalities will be added in the future as this app is still a work in progress -->
+1. The app includes a navigation dropdown for easy navigation through various sections.
+   Responsive UI:
+
+2. The user interface is designed to be responsive, ensuring a seamless experience across different devices and screen sizes.
+
+- React Reusable Components:
+
+1. Utilizes reusable React components to enhance code modularity and maintainability.
+
+# Installation
+
+- npx create-react-app ecommerce-homepage
+
+<!-- Real datas to be added soon -->
